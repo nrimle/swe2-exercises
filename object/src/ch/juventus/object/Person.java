@@ -1,11 +1,11 @@
 package ch.juventus.object;
 
 public class Person {
-    String firstName;
-    String lastName;
-    Address address;
-    int age;
-    boolean hasPet;
+    private String firstName;
+    private String lastName;
+    private Address address;
+    private int age;
+    private boolean hasPet;
 
     @Override
     public String toString() {

@@ -2,10 +2,10 @@ package ch.juventus.object;
 
 public class Address {
 
-    String street;
-    int number;
-    int zip;
-    String city;
+    private String street;
+    private int number;
+    private int zip;
+    private String city;
 
     @Override
     public String toString() {
