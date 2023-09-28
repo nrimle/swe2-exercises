@@ -13,11 +13,7 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", address=" + address +
-                ", age=" + age +
-                ", hasPet=" + hasPet +
-                '}';
+                ", lastName='" + lastName + '\'' + "}";
     }
 
     public Person(String firstName, String lastName, Address address, int age, boolean hasPet) {

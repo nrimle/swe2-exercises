@@ -11,7 +11,7 @@ public class MathUtils {
      * @param numbers values
      * @return total
      */
-    private double additions(List<Double> numbers) {
+    double additions(List<Double> numbers) {
         double sum = 0.0;
         for (Double number : numbers) {
             sum += number;
@@ -24,7 +24,7 @@ public class MathUtils {
      * @param b value 2
      * @return total
      */
-    private double subtraction(double a, double b) {
+    double subtraction(double a, double b) {
         return  a - b;
     }
 
@@ -33,7 +33,7 @@ public class MathUtils {
      * @param b value 2
      * @return product
      */
-    private double division(double a, double b) {
+    double division(double a, double b) {
         return a / b;
     }
 
@@ -42,7 +42,7 @@ public class MathUtils {
      * @param b value 2
      * @return product
      */
-    private double multiplication(double a, double b) {
+    double multiplication(double a, double b) {
         return a * b;
     }
 }
