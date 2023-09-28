@@ -1,0 +1,50 @@
+/* Setze die Hintergrundfarbe auf dem <div> */
+div {
+    background-color: aqua;
+}
+
+/* Setze eine andere Hintergrundfarbe auf dem <p> */
+p {
+    background-color: pink;
+}
+
+/* Setze die Textfarbe auf dem <h2> */
+h2 {
+    color: rebeccapurple;
+}
+
+/* Setze einen Rahmen um das <p> Element */
+p {
+    border: blue dashed;
+}
+
+/* Setze einen Anstand von 50px um das <h2> Element (verwende margin) */
+h2 {
+    margin: 50px
+}
+
+/* Setze einen Anstand von 50px immerhalb des <p> Elements (verwende padding) */
+p {
+    padding: 50px;
+}
+
+/* Setze die breite des <p> Elements auf 500px */
+p {
+    width: 500px;
+}
+
+/* Zentriere den Titel horizontal */
+h2 {
+    text-align: center;
+}
+
+/* Vergrössere den Zeilebabstand des Texts im <p> Element */
+p {
+    line-height: 1.5;
+}
+
+/* Verändere grösse und Schriftart des Texts im <p> Element */
+p {
+    font-family: "Bell MT", serif;
+    font-size: large;
+}

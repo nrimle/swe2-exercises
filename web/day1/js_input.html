@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Form Values</title>
+</head>
+<body>
+
+<form id="myForm">
+    <label for="favColor">Favorite color:</label><br>
+    <input type="text" id="favColor" name="favColor"><br><br>
+
+    <label for="favFood">Favorite food:</label><br>
+    <input type="text" id="favFood" name="favFood"><br><br>
+
+    <button type="button" onclick="printFormValues()">Click me</button>
+    <button type="button" onclick="log()">Click me</button>
+</form>
+
+<script>
+    function printFormValues() {
+        const form = document.getElementById('myForm');
+        const formData = new FormData(form);
+
+        for (const [key, value] of formData.entries()) {
+            console.log(key + ': ' + value);
+        }
+    }
+
+    // Schreibe eine Funktion, die ausgeführt wird wenn auf den Button gedrückt wird.
+    // Sie soll "CLICK" auf der Konsole ausgeben.
+
+    function log() {
+        console.log('Clicked');
+    }
+</script>
+</body>
+</html>

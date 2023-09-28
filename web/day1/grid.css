@@ -1,0 +1,60 @@
+/*
+Verwende Grid Layout um die <div> Elemente folgendermassen anzuordnen:
+-----------------------------------------------
+|                  Header                     |
+-----------------------------------------------
+|              |                       |      |
+|              |       Content         | Side |
+|  Navigation  |                       |      |
+|              |-------------------------------
+|              |           Footer             |
+-----------------------------------------------
+
+Referenz:
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout
+*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+    grid-auto-rows: 100px;
+}
+
+.box {
+    border: blue solid 1px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.side {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.footer {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}

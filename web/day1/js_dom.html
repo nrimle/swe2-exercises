@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./js_dom.css">
+</head>
+<body>
+<div id="container" onmouseover="mouseover()" onmouseout="mouseout()">
+    <span>Replace me</span>
+</div>
+
+<button onclick="myFunction()">Click me</button><br>
+
+<button onclick="addTable()">New Button</button>
+</body>
+
+<script>
+    // Referenz: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
+
+    // Schreibe eine Funktion, die den Text im <span> Element ändert
+
+    function myFunction() {
+        document.getElementById("container").innerHTML = "Hello World";
+    }
+
+
+
+    // Schreibe eine Funktion, die einen "mouseover" und "mouseout" event auf dem <span> Element registrieren.
+    // Bei "mouseover" soll die CSS Klasse highlight auf dem <span> Element gesetzt werden.
+
+    function mouseover() {
+        let element = document.getElementById("container");
+        if (element) {
+            element.classList.add('highlight');
+        }
+    }
+
+    // Bei "mouseout" soll die CSS Klasse highlight auf dem <span> Element entfernt werden.
+
+    function mouseout() {
+        let element = document.getElementById("container");
+        if (element) {
+            element.classList.remove('highlight');
+        }
+    }
+
+    /* Schreibe eine Funktion, die folgende Tabelle unter dem <span> Element einfügt:
+        ---------------------
+        | HeaderA | HeaderB |
+        ---------------------
+        | DataA   | DataB   |
+        ---------------------
+    */
+    function addTable() {
+        document.getElementById("container").insertAdjacentHTML("afterend",
+        "<table>\n" +
+            "  <tr>\n" +
+            "    <th>HeaderA</th>\n" +
+            "    <th>HeaderB</th>\n" +
+            "  </tr>\n" +
+            "  <tr>\n" +
+            "    <td>DataA</td>\n" +
+            "    <td>DataB</td>\n" +
+            "  </tr>\n" +
+            "</table>");
+    }
+
+</script>
+</html>
